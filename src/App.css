@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body {
+  direction: rtl;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rightSide {
+  flex-basis: 300px;
+  border-left: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+}
+.page-wrapper {
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.calendar-wrapper {
+  width: 90%;
+  height: 500px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+}
+.small-calendar-wrapper {
+  width: 248px;
+  height: 240px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small-calendar-header {
+  height: 33px;
+  border-bottom: 1px solid black;
+  background-color: #eaeff5;
+}
+.small-calendar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.small-calendar-row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-direction: row;
+}
+.small-calendar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
